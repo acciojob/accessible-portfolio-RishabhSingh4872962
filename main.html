@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header role="banner">
+        <h1>My Portfolio</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about" role="menuitem">About Me</a></li>
+                <li><a href="#projects" role="menuitem">Projects</a></li>
+                <li><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main role="main">
+        <section id="about" role="region" aria-label="About Me">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself here.</p>
+        </section>
+
+        <section id="projects" role="region" aria-label="Projects">
+            <h2>Projects</h2>
+            <ul role="list">
+                <li role="listitem">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </li>
+                <li role="listitem">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <section id="contact" role="region" aria-label="Contact">
+            <h2>Contact</h2>
+            <p>Contact information and a contact form can be included here.</p>
+        </section>
+    </footer>
 </body>
-
 </html>
